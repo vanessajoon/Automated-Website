@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Focus<span>List</span></div>
+    <button id="themeButton">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">MY DAILY SPACE</p>
+      <h1>Get things done.<br><span>One task at a time.</span></h1>
+      <p class="intro">A simple task list to help you keep track of what matters today.</p>
+    </section>
+
+    <section class="task-card">
+      <form id="taskForm">
+        <input id="taskInput" type="text" placeholder="What do you need to do?" autocomplete="off">
+        <button type="submit">Add Task</button>
+      </form>
+
+      <div class="task-header">
+        <h2>Today's Tasks</h2>
+        <span id="taskCount">0 tasks</span>
+      </div>
+
+      <ul id="taskList"></ul>
+      <p id="emptyMessage" class="empty">No tasks yet. Add your first one!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
