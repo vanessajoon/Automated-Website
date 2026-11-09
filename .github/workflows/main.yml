@@ -64,7 +64,7 @@ jobs:
 
       # Load the saved image file back into the runner's local Docker daemon
       - name: Load Docker Image
-        run: docker load < image.ta
+        run: docker load < image.tar
 
       - name: Test Container Run
         run: |
@@ -76,7 +76,7 @@ jobs:
         run: |
           echo "Testing container web server response..."
           curl -I http://localhost:8080
-          
+
       - name: Tear Down Container
         if: always()
         run: docker rm -f test-app
